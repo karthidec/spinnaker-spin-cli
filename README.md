@@ -42,4 +42,4 @@ python3 spin-cli.py spin-update-pipelines
 
 ### Execution video:
 
-![Spinnaker spin-cli](https://img.youtube.com/vi/h1k3tLguu78/0.jpg)](https://www.youtube.com/watch?v=h1k3tLguu78)
+[![spinnaker spin-cli](http://img.youtube.com/vi/h1k3tLguu78/0.jpg)](http://www.youtube.com/watch?v=h1k3tLguu78 "https://img.youtube.com/vi/h1k3tLguu78/0.jpg")
