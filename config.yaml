@@ -1,0 +1,8 @@
+#APPLICATION & PIPELINES
+
+application1:
+  - pipeline1-application1
+  - pipeline2-application2
+
+application2:
+  - pipeline1-application2

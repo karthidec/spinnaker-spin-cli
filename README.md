@@ -4,8 +4,9 @@
 How to update multiple spinnaker pipelines at a time using spin-cli ?
 
 ### Framework design:
- - Connect to spinnaker and automatic download pipeline json files
- - Update files in your local machine
+ - Connect to spinnaker and automatically download pipeline json files
+     - Note: If run-time argument passed for `config.yaml` file, then it will GET/UPDATE for only pipelines present in config.yaml file
+ - Update files in local machine
  - Upload files again to spinnaker to update pipelines
 
 
@@ -36,21 +37,37 @@ python3 --version
 python3 spin-cli.py help
 ```
 
-4. To get all spinnaker pipelines to your local machine.  Folder `spin-existing-pipelines` will get create upon successful execution.
+4. To get `ALL` spinnaker pipelines to your local machine.  Folder `spin-existing-pipelines` will get create upon successful execution.
 ```
-python3 spin-cli.py spin-get-pipelines
-```
-
-5. Update spinnaker pipeline files as require and save it
-6. To update pipelines into spinnaker application
-```
-python3 spin-cli.py spin-update-pipelines
+python3 spin-cli.py spin-get-all-pipelines
 ```
 
+5. Update spinnaker pipelines config field in files as required and save it
+
+6. To update `ALL` pipelines into spinnaker application
+```
+python3 spin-cli.py spin-update-all-pipelines
+```
 
 
+## GET/UPDATE only selected pipelines:
 
+1. Update `config.yaml` with application & pipeline details
+
+2. To get above `step-1` config defined pipelines to your local machine.  Folder `spin-existing-pipelines` will get create upon successful execution.
+```
+python3 spin-cli.py spin-get-config-only-pipelines
+```
+
+3. Update spinnaker pipelines config field in files as required and save it
+
+4. To update as per above `step-2` config defined pipelines into spinnaker application
+```
+python3 spin-cli.py spin-update-config-only-pipelines
+```
 
 Execution video:
+
+ALL pipelines:
 
 [![spinnaker spin-cli](http://img.youtube.com/vi/h1k3tLguu78/0.jpg)](http://www.youtube.com/watch?v=h1k3tLguu78 "https://img.youtube.com/vi/h1k3tLguu78/0.jpg")
