@@ -23,13 +23,13 @@ gate:
 
 
 
-3. Have `python3` in your local machine
+3. Install `python3` in your local machine
 
 ```
 python3 --version
 ```
 
-### How to execute:
+## GET/UPDATE ALL pipelines:
 1. Clone this repo
 2. Navigate to the downloaded folder in terminal or command prompt
 3. To know about required run-time arguments
@@ -50,9 +50,9 @@ python3 spin-cli.py spin-update-all-pipelines
 ```
 
 
-## GET/UPDATE only selected pipelines:
+## GET/UPDATE ONLY selected pipelines:
 
-1. Update `config.yaml` with application & pipeline details
+1. Update `config.yaml` present in root folder with application & pipeline details
 
 2. To get above `step-1` config defined pipelines to your local machine.  Folder `spin-existing-pipelines` will get create upon successful execution.
 ```
@@ -66,8 +66,9 @@ python3 spin-cli.py spin-get-config-only-pipelines
 python3 spin-cli.py spin-update-config-only-pipelines
 ```
 
-Execution video:
 
-ALL pipelines:
+## Execution video:
+
+### ALL pipelines:
 
 [![spinnaker spin-cli](http://img.youtube.com/vi/h1k3tLguu78/0.jpg)](http://www.youtube.com/watch?v=h1k3tLguu78 "https://img.youtube.com/vi/h1k3tLguu78/0.jpg")
